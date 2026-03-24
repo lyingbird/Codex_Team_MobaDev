@@ -1,24 +1,22 @@
 # 当前会话状态
 
 - 日期：2026-03-24
-- 当前任务：完善中文版 Codex / Roblox 项目骨架
-- 当前状态：仓库结构已建立，Git 已初始化，内置 skills 已安装
+- 当前任务：把仓库从通用骨架推进为 MOBA 项目起步包
+- 当前状态：已完成第一版 MOBA 概念文档、系统总表和 3 份核心系统设计文档
 - 当前关注文件：
-  - `AGENTS.md`
-  - `README.md`
-  - `docs/`
   - `design/gdd/game-concept.md`
-  - `codex/skills-src/`
+  - `design/gdd/systems-index.md`
+  - `design/systems/match-flow.md`
+  - `design/systems/hero-controller.md`
+  - `design/systems/combat-loop.md`
 - 已做决定：
-  - 使用 `AGENTS.md` 作为 Codex 进入仓库后的主说明
-  - 使用 `codex/skills-src/` 管理仓库内维护的 skills
-  - 设计文档全部采用中文落地
-  - 当前先保持框架中立，不绑定 Rojo、Knit、Aero 等具体技术栈
+  - 项目方向采用 Roblox 3v3 短局动作 MOBA
+  - MVP 先做单主路、双外塔、主基地、3 个英雄原型的可玩闭环
+  - 先验证对局流程、英雄手感和战斗结算，再扩展商店、匹配和长线成长
 - 风险与假设：
-  - 目前还没有正式的 gameplay 代码
-  - `design/gdd/systems-index.md` 需要在概念文档完善后再生成
-  - 项目适合先从中小型范围验证，不建议直接奔向超大型架构
+  - 当前文档是可执行草稿，不是最终定稿
+  - 技能释放、死亡复活、兵线与塔目标仍未单独成文
+  - Mobile 输入方案和弱网体验后续仍需专门打磨
 - 下一步建议：
-  - 先填写 `design/gdd/game-concept.md`
-  - 再运行 `roblox-map-systems`
-  - 然后为第一个 MVP 系统编写 `design/systems/*.md`
+  - 继续补 `skill-casting.md`、`respawn-system.md`、`minion-wave.md`
+  - 或直接开始搭第一版 `src/shared` 配置和 `src/server` 对局状态机
