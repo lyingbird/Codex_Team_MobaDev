@@ -1,0 +1,27 @@
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+
+# Roblox local files
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+sourcemap.json
+
+# Package and build outputs
+node_modules/
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
