@@ -1,12 +1,13 @@
 # 当前会话状态
 
 - 日期：2026-03-24
-- 当前任务：把仓库从通用骨架推进为以英雄技能机制为先的 MOBA 项目起步包
-- 当前状态：已完成第一版 MOBA 概念文档、系统总表、技能释放系统设计，以及第一版技能机制代码骨架
+- 当前任务：把仓库收束为“英雄体验优先”的 MOBA 原型项目
+- 当前状态：已把项目方向从地图推进优先改为英雄体验优先，完成了技能机制设计与原型阶段系统重排
 - 当前关注文件：
   - `design/gdd/game-concept.md`
   - `design/gdd/systems-index.md`
   - `design/systems/skill-casting.md`
+  - `design/systems/hero-prototype-flow.md`
   - `design/systems/match-flow.md`
   - `design/systems/hero-controller.md`
   - `design/systems/combat-loop.md`
@@ -15,14 +16,15 @@
   - `src/client/Abilities/AbilityController.luau`
 - 已做决定：
   - 项目方向采用 Roblox 3v3 短局动作 MOBA
-  - MVP 先做单主路、双外塔、主基地、3 个英雄原型的可玩闭环
+  - 但第一阶段不先做单主路、塔、防御目标和兵线
   - 优先把英雄技能释放机制做成统一框架，而不是先堆单个英雄技能脚本
   - 手感优先级高于复杂外围系统，先保证预瞄、前摇、打断、失败反馈和输入缓冲清楚
+  - 第一阶段原型应以训练场、对拼场或快速重开场景验证英雄体验
 - 风险与假设：
   - 当前技能代码仍是框架骨架，还没有接入实际 Remote 和角色实体
-  - 技能释放已经成文，但死亡复活、兵线和塔目标仍未单独成文
+  - 技能释放已经成文，但死亡复活、训练目标、命中反馈和资源状态还未单独成文
   - Mobile 输入方案和弱网体验仍需在真实 Studio 场景下继续打磨
 - 下一步建议：
-  - 继续补 `respawn-system.md`、`minion-wave.md`
+  - 继续补 `respawn-system.md`、`training-target.md`、`hit-feedback.md`
   - 把 `AbilityService` 和 `AbilityController` 接到真正的 Remote 与角色状态上
   - 补一个原型英雄的 3 个技能效果实现，优先验证手感
